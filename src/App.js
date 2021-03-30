@@ -4,6 +4,8 @@ import { UseStateExample } from './examples/useState';
 import { UseEffectExample } from './examples/useEffect';
 import { UseRefComponent } from './examples/useRef';
 import { UseMemoComponent } from './examples/useMemo';
+import { useCallbackComponent } from './examples/useCallback';
+import { useContextComponent } from './examples/useContext';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
           <Route path="/useeffect" component={UseEffectExample} />
           <Route path="/useref" component={UseRefComponent} />
           <Route path="/usememo" component={UseMemoComponent} />
+          <Route path="/usecallback" component={useCallbackComponent} />
+          <Route path="/usecontext" component={useContextComponent} />
         </Switch>
       </Router>
     </>
