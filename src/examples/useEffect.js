@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from 'react';
+import { useHistory } from 'react-router-dom';
 
 export const UseEffectExample = () => {
   const [type, setType] = useState('users');
-  const [data, setData] = useState([]);
+  // const [data, setData] = useState([]);
 
   // useEffect(() => {
   //   fetch(`https://jsonplaceholder.typicode.com/${type}`)
   //     .then((response) => response.json())
   //     .then((json) => setData(json));
-    
+
   //   return () => {
   //     console.log('clean type');
   //   }
@@ -34,6 +35,12 @@ export const UseEffectExample = () => {
     };
   }, []);
 
+  const history = useHistory();
+
+  const nextStep = () => {
+    history.push('/useref');
+  };
+
   return (
     <>
       <h1>2. useEffect example</h1>
@@ -46,6 +53,11 @@ export const UseEffectExample = () => {
       <br />
       {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}
       <pre>{JSON.stringify(pos, null, 2)}</pre>
+      <br />
+      <br />
+      <br />
+
+      <button onClick={nextStep}>NEXT HOOK</button>
     </>
   );
 };
