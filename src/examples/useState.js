@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 export const compteInitialCounter = () => {
-  console.log('calc');
   return Math.trunc(Math.random() * 20);
 };
 
