@@ -8,8 +8,8 @@ export const Alert = () => {
 
   return (
     <>
-      <div onClick={alert.toggle}>
-        <p>ОЧЕНЬ ВАЖНОЕ СООБЩЕНИЕ!</p>
+      <div onClick={alert.hide}>
+        <p>{alert.text}</p>
       </div>
     </>
   );
