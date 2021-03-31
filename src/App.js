@@ -6,6 +6,7 @@ import { UseRefComponent } from './examples/useRef';
 import { UseMemoComponent } from './examples/useMemo';
 import { useCallbackComponent } from './examples/useCallback';
 import { useContextComponent } from './examples/useContext';
+import { CustomHook } from './examples/customHooks';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/usememo" component={UseMemoComponent} />
           <Route path="/usecallback" component={useCallbackComponent} />
           <Route path="/usecontext" component={useContextComponent} />
+          <Route path="/customhook" component={CustomHook} />
         </Switch>
       </Router>
     </>
